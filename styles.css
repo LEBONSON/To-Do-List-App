@@ -19,76 +19,77 @@
     border-radius: 10px; /* La propriété border-radius permet de définir les coins arrondis d'un élément */
 
 }
-.todo-app h2{
+.todo-app h2{ /* Sélectionne les éléments h2 dans la classe todo-app */
     color: #002765; /* La propriété color permet de définir la couleur du texte d'un élément */
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; 
+    display: flex; /* La propriété display permet de définir le type d'affichage d'un élément et flex crée un conteneur flexible */
+    align-items: center; /* La propriété align-items permet d'aligner les éléments enfants le long de l'axe transversal dans un conteneur flexible */
+    margin-bottom: 20px; /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément */
 }
 
-.todo-app h2 img{
-    width: 30px;
-    margin-left: 10px; 
+.todo-app h2 img{ /* Sélectionne les éléments img à l'intérieur des éléments h2 dans la classe todo-app */
+    height: 30px; /* La propriété height définit la hauteur d'un élément */
+    width: 30px; /* La propriété width définit la largeur d'un élément */
+    margin-left: 10px; /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément */
 }
 
-.row{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
+.row{   /* Sélectionne les éléments avec la classe row */
+    display:flex;   /* La propriété display permet de définir le type d'affichage d'un élément et flex crée un conteneur flexible */
+    align-items: center;    /* La propriété align-items permet d'aligner les éléments enfants le long de l'axe transversal dans un conteneur flexible */
+    justify-content: space-between; /* La propriété justify-content permet d'aligner les éléments enfants le long de l'axe principal dans un conteneur flexible et space-between distribue l'espace entre les éléments */
+    background: #edeef0;    /* La propriété background permet de définir l'arrière-plan d'un élément */
+    border-radius: 30px;    /* La propriété border-radius permet de définir les coins arrondis d'un élément */
+    padding-left: 20px;     /* La propriété padding définit l'espace entre le contenu de l'élément et sa bordure */
+    margin-bottom: 25px;    /* La propriété margin définit la taille des marges sur les quatre côtés de l'élément */
 }
 
-input{
-    flex:1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    font-weight: 14px;
+input{      /* Sélectionne les éléments input */
+    flex:1;     /* La propriété flex permet de définir la flexibilité d'un élément dans un conteneur flexible et 1 signifie que  l'élément peut grandir et rétrécir pour occuper l'espace disponible */
+    border: none;     /* La propriété border permet de définir la bordure d'un élément et none signifie qu'il n'y a pas de bordure */
+    outline: none;      /* La propriété outline permet de définir le contour d'un élément et none signifie qu'il n'y a pas de contour */
+    background: transparent;     /* La propriété background permet de définir l'arrière-plan d'un élément et transparent signifie qu'il n'y a pas d'arrière-plan */
+    padding: 10px;      /* La propriété padding définit l'espace entre le contenu de l'élément et sa bordure */
+    font-weight: 14px;  /* La propriété font-weight permet de définir l'épaisseur de la police de caractères utilisée pour le t exte d'un élément */
 }
 
-button{
-     border: none;
-     outline: 16px 50px;
-     padding: 16px 50px;
-     background: #ff5945;
-     color: #fff;
-     font-size: 16px;
-     cursor: pointer;
-     border-radius: 40px;
+button{         /* Sélectionne les éléments button */
+     border: none;      /* La propriété border permet de définir la bordure d'un élément et none signifie qu'il n'y a pas de bordure */
+     outline: 16px 50px;    /* La propriété outline permet de définir le contour d'un élément */
+     padding: 16px 50px;        /* La propriété padding définit l'espace entre le contenu de l'élément et sa bordure */
+     background: #ff5945;   /* La propriété background permet de définir l'arrière-plan d'un élément */
+     color: #fff;       /* La propriété color permet de définir la couleur du texte d'un élément */ 
+     font-size: 16px;   /* La propriété font-size permet de définir la taille de la police de caractères utilisée pour le texte d'un élément */
+     cursor: pointer;   /* La propriété cursor permet de définir le type de curseur affiché lorsque l'utilisateur survole l'élément et pointer indique un lien cliquable */   
+     border-radius: 40px; /* La propriété border-radius permet de définir les coins arrondis d'un élément */
      
 }
 
 ul li{
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor:pointer; 
-    position: relative; 
+    list-style: none; /* La propriété list-style permet de définir le style des puces ou des numéros dans une liste et none signifie qu'il n'y a pas de puces ou de numéros */
+    font-size: 17px;    /* La propriété font-size permet de définir la taille de la police de caractères utilisée pour le texte d'un élément */
+    padding: 12px 8px 12px 50px;    /* La propriété padding définit l'espace entre le contenu de l'élément et sa bordure */
+    user-select: none;      /* La propriété user-select permet de définir si l'utilisateur peut sélectionner le texte d'un élément et none signifie que le texte ne peut pas être sélectionné */
+    cursor:pointer;         /* La propriété cursor permet de définir le type de curseur affiché lorsque l'utilisateur survole l'élément et pointer indique un lien cliquable */
+    position: relative;     /* La propriété position permet de définir le type de positionnement d'un élément et relative signifie que l'élément est positionné par rapport à sa position normale */
 }
 
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(/images/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
+ul li::before{          /* Styles pour l'élément avant les éléments de la liste */
+    content: '';        /* La propriété content permet de définir le contenu de l'élément avant les éléments de la liste */
+    position: absolute;     /* La propriété position permet de définir le type de positionnement d'un élément et  absolute signifie que l'élément est positionné par rapport à son premier ancêtre positionné */
+    height: 28px;       /* Taille de l'élément avant les éléments de la liste */
+    width: 28px; /* Taille de l'élément avant les éléments de la liste */
+    border-radius: 50%; /* Rendre l'élément avant les éléments de la liste circulaire */
+    background-image: url(/images/unchecked.png); /* Image de case non cochée */
+    background-size: cover; /* Ajuster la taille de l'image de fond pour couvrir entièrement l'élément */
+    background-position: center; /* Centrer l'image de fond */
+    top: 12px; /* Positionnement de l'élément avant les éléments de la liste */
+    left: 8px; /* Positionnement de l'élément avant les éléments de la liste */
 }
 
-ul li.checked {
-    color: #555;
-    text-decoration: line-through;  
+ul li.checked {     /* Styles pour les éléments cochés de la liste */
+    color: #555; /* Couleur de texte grise pour les éléments cochés */
+   text-decoration: line-through; /* Texte barré pour les éléments cochés */  
 }
-ul li.checked::before {
-    background-image: url(/images/checked.png);
+ul li.checked::before { /* Styles pour l'élément avant les éléments cochés */
+    background-image: url(/images/checked.png); /* Image de case cochée */
 
 }
