@@ -85,11 +85,28 @@ ul li::before{          /* Styles pour l'élément avant les éléments de la li
     left: 8px; /* Positionnement de l'élément avant les éléments de la liste */
 }
 
-ul li.checked {     /* Styles pour les éléments cochés de la liste */
+ ul li.checked {     /* Styles pour les éléments cochés de la liste */
     color: #555; /* Couleur de texte grise pour les éléments cochés */
    text-decoration: line-through; /* Texte barré pour les éléments cochés */  
 }
 ul li.checked::before { /* Styles pour l'élément avant les éléments cochés */
     background-image: url(/images/checked.png); /* Image de case cochée */
 
+}
+
+ul li span{ /* Styles pour les éléments span à l'intérieur des éléments de la liste */
+    position: absolute; /* La propriété position permet de définir le type de positionnement d'un élément et absolute signifie que l'élément est positionné par rapport à son premier ancêtre positionné */
+    right: 0; /* Positionnement de l'élément span */
+    top: 5px; /* Positionnement de l'élément span */
+    width: 40px; /* Largeur de l'élément span */
+    height: 40px; /* Hauteur de l'élément span */
+    font-size: 22px; /* Taille de la police de caractères utilisée pour le texte de l'élément span */
+    line-height: 40px; /* Hauteur de ligne de l'élément span */
+    text-align: center; /* Alignement du texte de l'élément span */
+    border-radius: 50%; /* Coins arrondis de l'élément span */
+    cursor: pointer; /* La propriété cursor permet de définir le type de curseur affiché */
+}
+
+ul li span:hover{ /* Styles pour les éléments span lorsqu'ils sont survolés */
+    background: #edeef0; /* Couleur de fond pour les éléments span survolés */
 }
